@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>How it works</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/index.css">
+    <script type="text/javascript" src="js/jQuery.3.3.1.js"></script>
+    <script type="text/javascript" src="js/displace.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+
+<div class="navbar-fixed">
+    <nav>
+        <div class="nav-wrapper navigation">
+            <a href="#" class="name brand-logo left">
+                <img src="resources/logo.png" alt="Logo">
+                <img src="resources/title.png" alt="How does a ballpoint pen work?">
+            </a>
+            <span class="authors">
+                <img src="resources/author.png" alt="Made by Hanyu Tang and Duoduo Zhang">
+            </span>
+        </div>
+    </nav>
+</div>
+
+
+<div class="course">
+    <div id="player"></div>
+    <div class="cover active">
+        <div class="front active">
+            <button type="button">
+                <img src="resources/buttontext.png" alt="Let's Start Learning">
+            </button>
+        </div>
+        <div class="drag1">
+            <div class="drag1_target">
+                <div class="drag1_target_object" id="t1a">
+                    <span></span>
+                    <img src="resources/1a.png" alt="which is a long narrow tube">
+                </div>
+                <div class="drag1_target_object" id="t1b">
+                    <span></span>
+                    <img src="resources/1b.png" alt="the place for you to hold your pen">
+                </div>
+                <div class="drag1_target_object" id="t1c">
+                    <span></span>
+                    <img src="resources/1c.png" alt="which separates ink and paper">
+                </div>
+                <div class="drag1_target_object" id="t1d">
+                    <span></span>
+                    <img src="resources/1d.png" alt="used as a cap">
+                </div>
+            </div>
+            <div class="drag1_block">
+                <img class="drag1_block_object" id="b1d" src="resources/1dd.png" alt="Ball" draggable="true">
+                <img class="drag1_block_object" id="b1c" src="resources/1cc.png" alt="Socket" draggable="true">
+                <img class="drag1_block_object" id="b1a" src="resources/1aa.png" alt="Outer Tube" draggable="true">
+                <img class="drag1_block_object" id="b1b" src="resources/1bb.png" alt="Ink Reservoir" draggable="true">
+            </div>
+            <div class="drag1_feedback">
+                <div class="drag1_btn correct"></div>
+                <div class="drag1_btn wrong"></div>
+            </div>
+        </div>
+        <div class="drag2">
+            <div class="drag2_target">
+                <div class="drag2_target">
+                    <div class="drag2_target_object" id="t2a">
+                        <span></span>
+                        <img src="resources/2a.png" alt="which is a long narrow tube">
+                    </div>
+                    <div class="drag2_target_object" id="t2b">
+                        <span></span>
+                        <img src="resources/2b.png" alt="the place for you to hold your pen">
+                    </div>
+                    <div class="drag2_target_object" id="t2c">
+                        <span></span>
+                        <img src="resources/2c.png" alt="which separates ink and paper">
+                    </div>
+                </div>
+            </div>
+            <div class="drag2_block">
+                <img class="drag1_block_object" id="b2c" src="resources/2aa.png" alt="Rolling" draggable="true">
+                <img class="drag1_block_object" id="b2a" src="resources/2bb.png" alt="Adhesive" draggable="true">
+                <img class="drag1_block_object" id="b2b" src="resources/2cc.png" alt="Gravity" draggable="true">
+            </div>
+            <div class="drag2_feedback">
+                <div class="drag2_btn correct"></div>
+                <div class="drag2_btn wrong"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script type="text/javascript" src="js/materialize.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
