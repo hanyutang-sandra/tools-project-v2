@@ -1,5 +1,9 @@
+*{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
 html{
-    width: 100%
+    width: 100%;
 }
 
 body{
@@ -152,161 +156,62 @@ nav{
     height: auto;
 }
 
-.cover>.drag1{
+.cover>.ex1{
     display: none;
     width: 960px;
     height: 540px;
-    background-image: url('../resources/drag1.png');
+    background-image: url('../resources/ex1.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     overflow: hidden;
+    text-align: left;
     visibility: hidden;
 }
 
-.drag1.active{
+.ex1.active{
     display: block;
     visibility: visible;
 }
 
-.drag1_target{
+.ex1_text{
     display: block;
     width: 25rem;
-    height: 100%;
+    height: 20rem;
     overflow: hidden;
     position: absolute;
     right: 0;
+    padding: 2rem;
+    padding-top: 3rem;
 }
 
-.drag1_target_object{
-    display: block;
-    font-size: 0;
-    width: 100%;
-    height: 41px;
-    overflow: hidden;
-    text-align: left;
-}
-
-.drag1_target_object:nth-of-type(1){
-    margin-top: 8.5rem;
-}
-
-.drag1_target_object:nth-of-type(2){
-    margin-top: 1.6rem;
-}
-
-
-.drag1_target_object:nth-of-type(3){
-    margin-top: 3.6rem;
-}
-
-.drag1_target_object:nth-of-type(4){
-    margin-top: 2rem;
-}
-
-.drag1_target_object>span{
-    display: inline-block;
-    width: 104px;
-    height: 100%;
-    float: left;
-    background-color: #d8d8d8;
-    border-radius: 8px;
-}
-
-.drag1_target_object>img{
-    display: inline-block;
-    width: 100px;
-    height: 100%;
-    margin-left: 1rem;
-    object-fit: contain;
-}
-
-.drag1_target_object:nth-of-type(3)>img{
-    width: 160px;
-}
-
-.drag1_target_object:last-of-type>img{
-    width: 90px;
-}
-
-
-.drag1_block{
-    display: block;
-    width: 25rem;
-    height: 100%;
-    position: absolute;
-    z-index: 20;
-    right: 0;
-    bottom: 0;
+.ex1_text>ul>li{
+    margin-top: 1rem;
     cursor: pointer;
+ }
+
+.ex1_text>ul>li:hover{
+    color: white;
 }
 
-.drag1_block>img{
-    display: inline-block;
-    width: 104px;
-    height: 41px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-.drag1_block>img:hover{
-    opacity: 0.8;
-}
-
-#b1a{
-    display: inline-block;
-    width: 104px;
-    height: 41px;
-    bottom: 5rem;
-    left: 0;
-}
-
-#b1b{
-    display: inline-block;
-    width: 104px;
-    height: 41px;
-    bottom: 5rem;
-    right: 5rem;
-}
-
-#b1c{
-    display: inline-block;
-    width: 104px;
-    height: 41px;
-    bottom: 1rem;
-    left: 0;
-}
-
-#b1d{
-    display: inline-block;
-    width: 104px;
-    height: 41px;
-    bottom: 1rem;
-    right: 5rem;
-}
-
-.drag1_feedback{
+.ex1_feedback{
     display: none;
-    width: 100%;
-    height: 100%;
+    width: 10rem;
+    height: 10rem;
     position: absolute;
     z-index: 50;
-    background-image: url('../resources/drag1_feedback.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+    top: 20rem;
+    right: 9rem;
     text-align: center;
     visibility: hidden;
 }
 
-.drag1_feedback.active{
+.ex1_feedback.active{
     display: block;
     visibility: visible;
 }
 
-.drag1_feedback>.drag1_btn{
+.ex1_feedback>.ex1_btn{
     display: block;
     width: 15rem;
     height: 12rem;
@@ -317,7 +222,7 @@ nav{
     cursor: pointer;
 }
 
-.drag1_btn.correct{
+.ex1_btn.correct{
     display: none;
     width: 15rem;
     height: 12rem;
@@ -327,15 +232,11 @@ nav{
     background-size: contain;
 }
 
-.drag1_btn.correct:hover{
-    opacity: 0.7;
-}
-
-.drag1_btn.correct.active{
+.ex1_btn.correct.active{
     display: block;
 }
 
-.drag1_btn.wrong{
+.ex1_btn.wrong{
     display: none;
     width: 15rem;
     height: 12rem;
@@ -345,179 +246,77 @@ nav{
     background-size: contain;
 }
 
-.drag1_btn.wrong:hover{
-    opacity: 0.7;
-}
-
-.drag1_btn.wrong.active{
+.ex1_btn.wrong.active{
     display: block;
 }
 
-.drag1_button.active:hover{
-    box-shadow: #979797 0.1px 0.1px 7px 3px;
-}
 
-.drag1_button.active{
-    display: block;
-}
-
-.cover>.drag2{
+.cover>.ex2{
     display: none;
     width: 960px;
     height: 540px;
-    background-image: url('../resources/drag2.png');
+    background-image: url('../resources/ex2.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     overflow: hidden;
+    text-align: left;
     visibility: hidden;
 }
 
-.drag2.active{
+.ex2.active{
     display: block;
     visibility: visible;
 }
 
-.drag2_target{
+.ex2_text{
     display: block;
-    width: 28rem;
-    height: 100%;
+    width: 25rem;
+    height: 20rem;
     overflow: hidden;
     position: absolute;
     right: 0;
-}
-
-.drag2_target_object{
-    display: block;
-    font-size: 0;
-    width: 100%;
-    height: 41px;
-    overflow: hidden;
     text-align: left;
-    margin-top: 2rem;
+    margin-right: 20rem;
+    padding: 2rem;
+    padding-top: 3rem;
 }
 
-.drag2_target_object:first-of-type{
-    margin-top: 9rem;
-}
-
-.drag2_target_object:nth-of-type(2){
-    margin-top: 4rem;
-}
-
-.drag2_target_object:nth-of-type(3){
-    margin-top: 0.3rem;
-}
-
-.drag2_target_object>span{
-    display: inline-block;
-    width: 104px;
-    height: 100%;
-    float: left;
-    background-color: #d8d8d8;
-    border-radius: 8px;
-}
-
-.drag2_target_object>img{
-    display: inline-block;
-    width: 220px;
-    height: 100%;
-    margin-left: 1rem;
-    object-fit: contain;
-}
-
-.drag2_target_object:first-of-type>img{
-    width: 250px;
-}
-
-.drag2_target_object:last-of-type>img{
-    position: absolute;
-    left: -10px;
-    top: 70px;
-    width: 350px;
-}
-
-
-.drag2_block{
-    display: block;
-    width: 28rem;
-    height: 100%;
-    position: absolute;
-    z-index: 20;
-    bottom: 0;
-    right: 0;
+.ex2_text>ul>li{
+    margin-top: 1rem;
     cursor: pointer;
 }
 
-.drag2_block>img{
-    display: inline-block;
-    width: 104px;
-    height: 41px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+.ex2_text>ul>li:hover{
+    color: white;
 }
 
-.drag2_block>img:hover{
-    opacity: 0.8;
-}
-
-#b2a{
-    display: inline-block;
-    width: 104px;
-    height: 41px;
-    bottom: 5rem;
-    left: 0;
-}
-
-#b2b{
-    display: inline-block;
-    width: 104px;
-    height: 41px;
-    bottom: 5rem;
-    left: 160px;
-}
-
-#b2c{
-    display: inline-block;
-    width: 104px;
-    height: 41px;
-    bottom: 5rem;
-    right: 0;
-}
-
-.drag2_feedback{
+.ex2_feedback{
     display: none;
     width: 100%;
     height: 100%;
     position: absolute;
     z-index: 50;
-    background-image: url('../resources/drag2_feedback.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
     text-align: center;
     visibility: hidden;
 }
 
-.drag2_feedback.active{
+.ex2_feedback.active{
     display: block;
     visibility: visible;
 }
 
-.drag2_feedback>.drag2_btn{
+.ex2_feedback>.ex2_btn{
     display: block;
     width: 15rem;
     height: 12rem;
     position: absolute;
-    bottom: 2rem;
-    left: 50%;
-    margin-left: -6rem;
+    top: 2rem;
+    right: 4rem;
     cursor: pointer;
 }
 
-.drag2_btn.correct{
+.ex2_btn.correct{
     display: none;
     width: 15rem;
     height: 12rem;
@@ -527,15 +326,15 @@ nav{
     background-size: contain;
 }
 
-.drag2_btn.correct:hover{
+.ex2_btn.correct:hover{
     opacity: 0.7;
 }
 
-.drag2_btn.correct.active{
+.ex2_btn.correct.active{
     display: block;
 }
 
-.drag2_btn.wrong{
+.ex2_btn.wrong{
     display: none;
     width: 15rem;
     height: 12rem;
@@ -545,18 +344,11 @@ nav{
     background-size: contain;
 }
 
-.drag2_btn.wrong:hover{
+.ex2_btn.wrong:hover{
     opacity: 0.7;
 }
 
-.drag2_btn.wrong.active{
+.ex2_btn.wrong.active{
     display: block;
 }
 
-.drag2_button.active:hover{
-    box-shadow: #979797 0.1px 0.1px 7px 3px;
-}
-
-.drag2_button.active{
-    display: block;
-}
